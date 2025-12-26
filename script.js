@@ -467,5 +467,79 @@ console.log("Hello js");
 // console.log(5 + "5");
 // console.log("5" - 2);
 
+// foreach que
+// let num = [10,20,30,40,50];
+// let print = num.forEach((val) =>{
+//   console.log(val);
+// });
+// console.log(print);
 
+// // map que
+// let num1 = [1,2,3,4,5];
+// let print1 = num1.map((val) =>{
+//   return val + 5;
+// });
+// console.log(num1);
+// console.log(print1);
+
+// // map que2
+
+// let lang = ["js", "html", "css"];
+// let capLANG = lang.map((val) =>{
+//   return val.toUpperCase();
+// });
+// console.log(capLANG);
+
+//filter que1
+
+// let num = [1, 2, 3, 4, 5, 6];
+
+// let filterNum = num.filter((val) => {
+//   return val % 2 === 0;
+// });
+// console.log(filterNum);
+
+// filter que2
+
+// let num = [20, 60, 45, 80, 30];
+
+// let numGr50 = num.filter((val) =>{
+//   return val > 50;
+// });
+// console.log(numGr50);
+
+// filter que3
+
+// let name1 = ["Ram", "Shyam", "Amit", "Suresh"];
+
+// let bigNames = name1.filter((val) => {
+//   return val.length > 4;
+// });
+// console.log(bigNames);
+
+// reduce que1
+
+// let num = [10, 20, 30, 40];
+
+// let sum = num.reduce((pre,curr) =>{
+//   return pre + curr;
+// });
+// console.log(sum);
+
+// reduce que2
+// let num = [1, 2, 3, 4]
+// ;
+
+// let sum = num.reduce((pre,curr) =>{
+//   return pre * curr;
+// });
+// console.log(sum);
+
+// reduce que2
+let num = [10,5,25,8];
+
+let maxNum = num.reduce((pre,curr) => {
+  return pre > curr? pre : curr;
+});
+console.log(maxNum);
 
