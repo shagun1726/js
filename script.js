@@ -536,10 +536,35 @@ console.log("Hello js");
 // console.log(sum);
 
 // reduce que2
-let num = [10,5,25,8];
+// let num = [10,5,25,8];
 
-let maxNum = num.reduce((pre,curr) => {
-  return pre > curr? pre : curr;
+// let maxNum = num.reduce((pre,curr) => {
+//   return pre > curr? pre : curr;
+// });
+// console.log(maxNum);
+
+//isPalindrome  121 ---> 121
+
+// function isPalindrome (num){
+//   for(i = 0; i <= num.length; i++){
+//     if(num[i] !== num[num.length -1 - i]){
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// let val = prompt("Enter the num");
+// let result = isPalindrome(val);
+// console.log(result);
+
+let num = Number(prompt("Enter number"));
+let arr = [];
+
+for (let i = 1; i <= num; i++) {
+  arr[i - 1] = Number(prompt("Enter arr number"));
+}
+console.log(arr);
+let sum = arr.reduce((res,curr) =>{
+  return res + curr;
 });
-console.log(maxNum);
-
+console.log(sum);
